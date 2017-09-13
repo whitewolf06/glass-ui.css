@@ -172,6 +172,7 @@
 	outline: none;
 	border-radius:2px;
 	border:1px solid transparent;
+	text-align: center;
 
 	&:hover {
 		background: darken($color-primary,10%);
@@ -372,6 +373,9 @@
 	&._h-indent {
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+	&._h-a-center {
+		align-items: center;
 	}
 }
 .ui--form {

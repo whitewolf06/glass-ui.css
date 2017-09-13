@@ -238,7 +238,8 @@ ol li {
   cursor: pointer;
   outline: none;
   border-radius: 2px;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  text-align: center; }
   .ui--btn:hover {
     background: #0d61de; }
   .ui--btn:active {
@@ -378,6 +379,8 @@ ol li {
   .ui--group._h-indent {
     margin-top: 10px;
     margin-bottom: 10px; }
+  .ui--group._h-a-center {
+    align-items: center; }
 
 .ui--form {
   display: block; }
