@@ -1,16 +1,18 @@
 // colors
 
-$color-black: #000;
-$color-white: #fff;
-$color-gray: #f7f7f7;
+@if ($color-black == null) {$color-black: #000000;}
+@if ($color-white == null) {$color-white: #ffffff;}
+@if ($color-gray == null) {$color-gray: #f7f7f7;}
 
-$color-text: #3f3e46;
-$color-link: #1fa3d8;
 
-$color-primary: #2b7bf3;
-$color-warning: #e8ae2b;
-$color-danger: #da4a5e; 
-$color-success: #31c365;
+@if ($color-text == null) {$color-text: #3f3e46;}
+@if ($color-link == null) {$color-link: #1fa3d8;}
+
+
+@if ($color-primary == null) {$color-primary: #2b7bf3;}
+@if ($color-warning == null) {$color-warning: #e8ae2b;}
+@if ($color-danger == null) {$color-danger: #da4a5e; }
+@if ($color-success == null) {$color-success: #31c365;}
 
 $size-mk : 0;
 $size-xs : 400;
@@ -20,4 +22,6 @@ $size-lg : 1200;
 
 // fonts
 
-$font-main: arial,verdana;
+@if ($font-main == null) {
+	$font-main: arial,verdana;
+}
