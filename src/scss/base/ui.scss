@@ -278,6 +278,30 @@
 				color: $color-white;
 			}
 		}
+		&._success {
+			border-color:$color-success;
+			color: $color-success;
+			&:hover {
+				background: darken($color-success,1%);
+				color: $color-white;
+			}
+		}
+		&._danger {
+			border-color:$color-danger;
+			color: $color-danger;
+			&:hover {
+				background: darken($color-danger,1%);
+				color: $color-white;
+			}
+		}
+	}
+	&._icon {
+		width: 30px;
+	    height: 30px;
+	    line-height: 30px;
+	    font-size: 14px;
+	    padding: 0;
+	    min-width: 30px;
 	}
 	&._clean {
 		background: transparent;
@@ -342,6 +366,7 @@
 		td,th {
 			border: 1px solid #e9ecef;
 			text-align: left;
+
 		}
 		thead {
 			td,th {
@@ -354,6 +379,7 @@
 		td,th {
 			border: none;
 			text-align: left;
+
 		}
 		tr:nth-child(2n) {
 			td,th {
@@ -376,6 +402,10 @@
 		color: $color-text;
 		font-size: 14px;
 		font-family: $font-main;
+		&:last-child {
+			padding-right: 0;
+			text-align: right;
+		}
 	}
 	th {
 	    font-weight: bold;
@@ -405,12 +435,12 @@
 
 	// Горизонтальный отступ
 	&._g-indent {
-		margin-left: -5px;
-		margin-right: -5px;
+		margin-left: -2px;
+		margin-right: -2px;
 
 		.ui--btn,.ui--checkbox__input {
-			margin-left: 5px;
-			margin-right: 5px;
+			margin-left: 2px;
+			margin-right: 2px;
 		}
 	}
 
